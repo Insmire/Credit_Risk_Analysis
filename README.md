@@ -1,6 +1,6 @@
 ## Overview
 
-The purpose of this project is to 
+The purpose of this project is to predict credit card risk using 2019 first quarter data. To this end, we resample the data utilizing the naive random oversampling algorithm, synthetic minority oversampling technique (SMOTE) algorithm, cluster centroid undersamling algorithm, and synthetic minority oversampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm prior to fitting the resampled features and target to a logistic regression model. We further utilize machine learning models balanced random forest classifier and easy ensemble classifier to predict credit risk. Lastly we determine the performance of the model sampled by various approach with the evaluation metrics balanced accuracy score, confusion matrix, and imbalanced classification report.
 
 ---
 
@@ -8,21 +8,79 @@ The purpose of this project is to
 
 Data Source:
 
-    
+    LoanStats_2019Q1.csv
 
 Software:
 
-    Jupyter Notebook
-    Python
+    imbalanced-learn version 0.7.0
+    Jupyter Notebook version 1.0.0
+    NumPy version 1.20.3
+    Python  3.7.11
+    SciPy version 1.7.1
+    Scikit-learn version 0.24.2
 
 ---
 
 ## Results
+<!-- Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results. -->
 
+* Naive random oversampling
 
+    - The balanced accuracy score is roughly 0.65.
+    - The precision or positive predictive value (PPV) of the model is 0.01 for predicting actual high risk applications to be high risk (true positive) and 1.00 for predicting actual low risk applications to be high risk (false positive).
+    - The sensitivity or recall of the model is 0.71 for predicting actual high risk applications to be low risk (false negative) and 0.59 for predicting actual low risk applications to be low risk (true negative).
+    - The F1 score or harmonic mean of a true positive prediction is 0.02; The F1 score of a true negative prediction is 0.74.
+
+photo
+
+* Synthetic minority oversampling technique (SMOTE)
+
+    - The balanced accuracy score is roughly 0.61.
+    - The precision of the model is 0.01 for predicting a true positive and 1.00 for predicting a false positive.
+    - The sensitivity of the model is 0.55 for predicting a false negative and 0.67 for predicting a true negative.
+    - The F1 score of a true positive prediction is 0.02; The F1 score of a true negative prediction is 0.80.
+
+photo
+
+* Cluster centroid undersampling
+
+    - The balanced accuracy score is roughly 0.54.
+    - The precision of the model is 0.01 for predicting a true positive and 1.00 for predicting a false positive.
+    - The sensitivity of the model is 0.65 for predicting a false negative and 0.43 for predicting a true negative.
+    - The F1 score of a true positive prediction is 0.01; The F1 score of a true negative prediction is 0.60.
+
+photo
+
+* Sythetic minority oversampling technique edited nearest neighbors (SMOTEENN)
+
+    - The balanced accuracy score is roughly 0.65.
+    - The precision of the model is 0.01 for predicting a true positive and 1.00 for predicting a false positive.
+    - The sensitivity of the model is 0.71 for predicting a false negative and 0.59 for predicting a true negative.
+    - The F1 score of a true positive prediction is 0.02; The F1 score of a true negative prediction is 0.74.
+
+photo
+
+* Balanced radom forest classifier
+
+    - The balanced accuracy score is roughly 0.68.
+    - The precision of the model is 0.88 for predicting a true positive and 1.00 for predicting a false positive.
+    - The sensitivity of the model is 0.37 for predicting a false negative and 1.00 for predicting a true negative.
+    - The F1 score of a true positive prediction is 0.52; The F1 score of a true negative prediction is 1.00.
+
+photo
+
+* Easy ensemble classifier
+
+    - The balanced accuracy score is roughly 0.93.
+    - The precision of the model is 0.09 for predicting a true positive and 1.00 for predicting a false positive.
+    - The sensitivity of the model is 0.92 for predicting a false negative and 0.94 for predicting a true negative.
+    - The F1 score of a true positive prediction is 0.19; The F1 score of a true negative prediction is 0.97.
+
+photo
 
 ---
 
 ## Summary
+<!-- Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning. -->
 
-
+Due to the nature of this project, we desire a higher predictability for accurately predicted high-risk applic over true negatives and false positives over false negatives. 
