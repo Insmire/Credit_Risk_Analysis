@@ -27,54 +27,54 @@ Software:
 * Naive random oversampling
 
     - The balanced accuracy score is roughly 0.65.
-    - The precision or positive predictive value (PPV) of the model is 0.01 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The sensitivity or recall of the model is 0.71 for predicting high risk applications and 0.59 for predicting low risk applications.
-    - The F1 score or harmonic mean of a true positive prediction is 0.02; The F1 score of a true negative prediction is 0.74.
+    - The precision or positive predictive value (PPV) of the model is 0.01 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The sensitivity or recall of the model is 0.71 for predicting high-risk applications and 0.59 for predicting low-risk applications.
+    - The F1 score or harmonic mean of a high-risk prediction is 0.02; The F1 score of a low-risk prediction is 0.74.
 
 photo
 
 * Synthetic minority oversampling technique (SMOTE)
 
     - The balanced accuracy score is roughly 0.61.
-    - The precision of the model is 0.01 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The sensitivity of the model is 0.55 for predicting high risk applications and 0.67 for predicting low risk applications.
-    - The F1 score of a true positive prediction is 0.02; The F1 score of a true negative prediction is 0.80.
+    - The precision of the model is 0.01 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The sensitivity of the model is 0.55 for predicting high-risk applications and 0.67 for predicting low-risk applications.
+    - The F1 score of a high-risk prediction is 0.02; The F1 score of a low-risk prediction is 0.80.
 
 photo
 
 * Cluster centroid undersampling
 
     - The balanced accuracy score is roughly 0.54.
-    - The precision of the model is 0.01 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The sensitivity of the model is 0.65 for predicting high risk applications and 0.43 for predicting low risk applications.
-    - The F1 score of a true positive prediction is 0.01; The F1 score of a true negative prediction is 0.60.
+    - The precision of the model is 0.01 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The sensitivity of the model is 0.65 for predicting high-risk applications and 0.43 for predicting low-risk applications.
+    - The F1 score of a high-risk prediction is 0.01; The F1 score of a low-risk prediction is 0.60.
 
 photo
 
 * Sythetic minority oversampling technique edited nearest neighbors (SMOTEENN)
 
     - The balanced accuracy score is roughly 0.65.
-    - The precision of the model is 0.01 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The sensitivity of the model is 0.71 for predicting high risk applications and 0.59 for predicting low risk applications.
-    - The F1 score of a true positive prediction is 0.02; The F1 score of a true negative prediction is 0.74.
+    - The precision of the model is 0.01 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The sensitivity of the model is 0.71 for predicting high-risk applications and 0.59 for predicting low-risk applications.
+    - The F1 score of a high-risk prediction is 0.02; The F1 score of a low-risk prediction is 0.74.
 
 photo
 
 * Balanced radom forest classifier
 
     - The balanced accuracy score is roughly 0.68.
-    - The precision of the model is 0.88 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The sensitivity of the model is 0.37 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The F1 score of a true positive prediction is 0.52; The F1 score of a true negative prediction is 1.00.
+    - The precision of the model is 0.88 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The sensitivity of the model is 0.37 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The F1 score of a high-risk prediction is 0.52; The F1 score of a low-risk prediction is 1.00.
 
 photo
 
 * Easy ensemble classifier
 
     - The balanced accuracy score is roughly 0.93.
-    - The precision of the model is 0.09 for predicting high risk applications and 1.00 for predicting low risk applications.
-    - The sensitivity of the model is 0.92 for predicting high risk applications and 0.94 for predicting low risk applications.
-    - The F1 score of a true positive prediction is 0.19; The F1 score of a true negative prediction is 0.97.
+    - The precision of the model is 0.09 for predicting high-risk applications and 1.00 for predicting low-risk applications.
+    - The sensitivity of the model is 0.92 for predicting high-risk applications and 0.94 for predicting low-risk applications.
+    - The F1 score of a high-risk prediction is 0.19; The F1 score of a low-risk prediction is 0.97.
 
 photo
 
@@ -83,4 +83,4 @@ photo
 ## Summary
 <!-- Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning. -->
 
-Due to the nature of this project, we desire a higher predictability for accurately predicted high-risk applications (true positives) over accurately predicted low-risk applications (true negatives). We also desire a higher predictability of low-risk applications falsely predicted as high-risk (false positive) over high-risk applications falsely predicted as low-risk (false negatives). Notice that re-sampling data with the various algorithms affected very little of the accuracy, precision, and recall of the logistic regression model. All three metrics 
+Due to the nature of this project, we desire a higher predictability for accurately predicted high-risk applications (true positives) over accurately predicted low-risk applications (true negatives). We also desire a higher predictability of low-risk applications falsely predicted as high-risk (false positive) over high-risk applications falsely predicted as low-risk (false negatives). This implies that we would favor a model with high precision as opposed to high sensitivity. Notice that re-sampling data with the various algorithms affected very little of the accuracy, precision, and recall of the logistic regression model. The balanced accuracy scores of all four algorithms are below 0.7. Furthermore the precision is low while sensitivity is high. Comparatively, the balanced random forest classifier observed a precision even though its accuracy is below 0.7. The easy ensemble classifier shows a low precision of 0.09 and a high accuracy of 0.93. After examining the various approach, one may recommend another machine learning model to obtain the desired metrics.
