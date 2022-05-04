@@ -1,6 +1,6 @@
 ## Overview
 
-The purpose of this project is to predict credit card risk using 2019 first quarter data. Past records indicate that credit card applications have a quantify imbalance in low-risk to high-risk loans. In order to reduce bias created from the weight of low-risk loans, we resample the data utilizing the naive random oversampling algorithm, synthetic minority oversampling technique (SMOTE) algorithm, cluster centroid undersamling algorithm, and synthetic minority oversampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm prior to fitting the resampled features and target to a logistic regression model. We further utilize machine learning models balanced random forest classifier and easy ensemble classifier to predict credit risk. Lastly we determine the performance of the model sampled by various approach with the evaluation metrics balanced accuracy score, confusion matrix, and imbalanced classification report.
+The purpose of this project is to utilize supervised machine learning to assist Fast Lending, a company that offers peer-to-peer lending service, to predict credit risk using the company's 2019 first quarter data. To this end, we begin by converting all qualitative data to numberical data before splitting the dataset for training and testing. Applications have a tendency to have an imbalance of high- and low-risk loans. So to reduce bias created from the weight of low-risk loans, we resample the data via various algorithms including the naive random oversampling algorithm, synthetic minority oversampling technique (SMOTE) algorithm, cluster centroids undersamling algorithm, and synthetic minority oversampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm prior to fitting the resampled data to a logistic regression model. Furthermore we fit the dataset to two other models, balanced random forest classifier and easy ensemble classifier to predict credit risk. Lastly we determine the performance of the model sampled by various approach with the evaluation metrics balanced accuracy score, confusion matrix, and imbalanced classification report.
 
 ---
 
@@ -31,7 +31,7 @@ Software:
     - The sensitivity or recall of the model is 0.71 for predicting high-risk applications and 0.59 for predicting low-risk applications.
     - The F1 score or harmonic mean of a high-risk prediction is 0.02; The F1 score of a low-risk prediction is 0.74.
 
-![naive_random_oversample_eval_metrics](https://user-images.githubusercontent.com/96349090/166248191-46c1a8fa-4246-4fb1-884b-919d2af4dd62.png)
+![naive_random_oversampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645538-2bba12a9-c08f-4814-b1ce-00386786e81b.png)
 
 
 * Synthetic minority oversampling technique (SMOTE)
@@ -41,17 +41,17 @@ Software:
     - The sensitivity of the model is 0.55 for predicting high-risk applications and 0.67 for predicting low-risk applications.
     - The F1 score of a high-risk prediction is 0.02; The F1 score of a low-risk prediction is 0.80.
 
-![smote_eval_metrics](https://user-images.githubusercontent.com/96349090/166248228-5b87aab3-1138-45c1-b749-085bce777200.png)
+![smote_oversampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645584-6e9f5139-13b4-41b9-a97b-b1363fd4fd6a.png)
 
 
-* Cluster centroid undersampling
+* Cluster centroids undersampling
 
     - The balanced accuracy score is roughly 0.54.
     - The precision of the model is 0.01 for predicting high-risk applications and 1.00 for predicting low-risk applications.
     - The sensitivity of the model is 0.65 for predicting high-risk applications and 0.43 for predicting low-risk applications.
     - The F1 score of a high-risk prediction is 0.01; The F1 score of a low-risk prediction is 0.60.
 
-![cluster_centroids_eval_metrics](https://user-images.githubusercontent.com/96349090/166248089-317a52d8-e29b-436f-b200-a462f1dc0825.png)
+![cluster_centroids_undersampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645646-25065783-76ad-430a-9490-7d0e2f7b7778.png)
 
 
 * Sythetic minority oversampling technique edited nearest neighbors (SMOTEENN)
@@ -61,7 +61,7 @@ Software:
     - The sensitivity of the model is 0.71 for predicting high-risk applications and 0.59 for predicting low-risk applications.
     - The F1 score of a high-risk prediction is 0.02; The F1 score of a low-risk prediction is 0.74.
 
-![smoteenn_eval_metrics](https://user-images.githubusercontent.com/96349090/166248257-928abafc-9923-4496-8d80-19f869c71fc9.png)
+![smoteenn_combination_sampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645697-72c90ab6-7bbc-4db0-91e9-5712b71b9568.png)
 
 
 * Balanced radom forest classifier
@@ -71,7 +71,7 @@ Software:
     - The sensitivity of the model is 0.37 for predicting high-risk applications and 1.00 for predicting low-risk applications.
     - The F1 score of a high-risk prediction is 0.52; The F1 score of a low-risk prediction is 1.00.
 
-![balanced_random_forest_eval_metrics](https://user-images.githubusercontent.com/96349090/166248037-f176589a-d027-4bcf-bfa3-91592ce8a02b.png)
+![random_forest_eval_metrics](https://user-images.githubusercontent.com/96349090/166645752-c9767b81-8597-48cb-9a8f-dd1d915cc38f.png)
 
 
 * Easy ensemble classifier
@@ -81,7 +81,7 @@ Software:
     - The sensitivity of the model is 0.92 for predicting high-risk applications and 0.94 for predicting low-risk applications.
     - The F1 score of a high-risk prediction is 0.19; The F1 score of a low-risk prediction is 0.97.
 
-![easy_ensemble_eval_metrics](https://user-images.githubusercontent.com/96349090/166248154-5410e40b-f6fe-4014-9a92-df7a1ce20215.png)
+![easy_ensemble_eval_metrics](https://user-images.githubusercontent.com/96349090/166645796-b76ad771-34e2-4667-8c4f-d64c1a01aa5a.png)
 
 
 ---
