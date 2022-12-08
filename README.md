@@ -2,8 +2,6 @@
 
 The purpose of this project is to utilize supervised machine learning to assist Fast Lending, a company that offers peer-to-peer lending service, to predict credit risk using the company's 2019 first quarter data. This data contains 86 variables, including features and the target, and a total of 68,817 applications. 
 
-We begin by converting all qualitative data to numberical data before splitting the dataset into training set and testing set. Applications have a tendency to have an imbalance of quantity between high- and low-risk loans. Thus to reduce bias created from the weight of low-risk loans, we re-sample the data via various algorithms including the naive random over-sampling algorithm, synthetic minority over-sampling technique (SMOTE) algorithm, cluster centroids undersamling algorithm, and synthetic minority over-sampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm, prior to fitting the re-sampled data to a logistic regression model. We also fit the dataset to two other models, balanced random forest classifier and easy ensemble classifier. Lastly we employ the evaluation metrics, balanced accuracy score, confusion matrix, and imbalanced classification report, to determine the performance of each algorithm or model.
-
 ---
 
 ## Resources
@@ -25,6 +23,8 @@ Software:
 
 ## Results
 <!-- Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results. -->
+
+We begin by converting all qualitative data to numberical data before splitting the dataset into training set and testing set. Applications have a tendency to have an imbalance of quantity between high- and low-risk loans. Thus to reduce bias created from the weight of low-risk loans, we re-sample the data via various algorithms including the naive random over-sampling algorithm, synthetic minority over-sampling technique (SMOTE) algorithm, cluster centroids undersamling algorithm, and synthetic minority over-sampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm, prior to fitting the re-sampled data to a logistic regression model. We also fit the dataset to two other models, balanced random forest classifier and easy ensemble classifier. Lastly we employ the evaluation metrics, balanced accuracy score, confusion matrix, and imbalanced classification report, to determine the performance of each algorithm or model.
 
 * Naive random over-sampling algorithm with logistic regression model
 
