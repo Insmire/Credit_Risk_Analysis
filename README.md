@@ -89,7 +89,7 @@ In comparison, the easy ensemble classifier obtains an astounding accuracy of 0.
 
 ## Resources
 
-Data Source:
+Data Source (file too large for upload):
 
     LoanStats_2019Q1.csv
 
