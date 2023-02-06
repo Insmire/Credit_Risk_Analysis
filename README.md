@@ -4,23 +4,6 @@ The purpose of this project is to utilize supervised machine learning to assist 
 
 ---
 
-## Resources
-
-Data Source:
-
-    LoanStats_2019Q1.csv
-
-Software:
-
-    imbalanced-learn version 0.7.0
-    Jupyter Notebook version 1.0.0
-    NumPy version 1.20.3
-    Python  3.7.11
-    SciPy version 1.7.1
-    Scikit-learn version 0.24.2
-
----
-
 ## Results
 <!-- Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results. -->
 
@@ -101,6 +84,23 @@ Notice that based on their evaluation metrics, re-sampling data with the various
 
 In comparison, the easy ensemble classifier obtains an astounding accuracy of 0.93, a low precision of 0.09, and a high sensitivity of 0.92 for predicting high-risk applications. Therefore I recommend at this point that the company employ the easy ensemble classifier to best predict high-risk applications while being cognizant of the possibility of overfitting. Overfitting may be detected and reduced by either [obtaining more training data or lowering model capacity](https://towardsdatascience.com/handling-overfitting-in-deep-learning-models-c760ee047c6e#:~:text=We%20can%20identify%20overfitting%20by,fit%20for%20the%20training%20data.).
 
+---
+
+## Resources
+
+Data Source:
+
+    LoanStats_2019Q1.csv
+
+Software:
+
+    imbalanced-learn version 0.7.0
+    Jupyter Notebook version 1.0.0
+    NumPy version 1.20.3
+    Python  3.7.11
+    SciPy version 1.7.1
+    Scikit-learn version 0.24.2
+    
 ---
 
 ### Contact
