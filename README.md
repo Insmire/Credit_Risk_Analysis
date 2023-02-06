@@ -2,14 +2,15 @@
 
 The purpose of this project is to utilize supervised machine learning to assist Fast Lending, a company that offers peer-to-peer lending service, to predict credit risk using the company's 2019 first-quarter data. This data contains 86 variables, including features and the target, and a total of 68,817 applications. 
 
+I begin by converting all qualitative data to numerical data before splitting the dataset into training and testing sets. Applications tend to have an imbalance of quantity between high- and low-risk loans. Thus to reduce bias created by the weight of low-risk loans, I re-sample the data via various algorithms including the naive random over-sampling algorithm, synthetic minority over-sampling technique (SMOTE) algorithm, cluster centroids under-sampling algorithm, and synthetic minority over-sampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm, before fitting the re-sampled data to a logistic regression model. I also fit the dataset to two other models, balanced random forest classifier and easy ensemble classifier. Lastly, I employ the evaluation metrics, balanced accuracy score, confusion matrix, and imbalanced classification report, to determine the performance of each algorithm or model.
+
 ---
 
 ## Results
 <!-- Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results. -->
 
-I begin by converting all qualitative data to numerical data before splitting the dataset into training and testing sets. Applications tend to have an imbalance of quantity between high- and low-risk loans. Thus to reduce bias created by the weight of low-risk loans, I re-sample the data via various algorithms including the naive random over-sampling algorithm, synthetic minority over-sampling technique (SMOTE) algorithm, cluster centroids under-sampling algorithm, and synthetic minority over-sampling technique edited nearest neighbors (SMOTEENN) combination sampling algorithm, before fitting the re-sampled data to a logistic regression model. I also fit the dataset to two other models, balanced random forest classifier and easy ensemble classifier. Lastly, I employ the evaluation metrics, balanced accuracy score, confusion matrix, and imbalanced classification report, to determine the performance of each algorithm or model.
-
-<!-- | |
+<!-- put results into a table for all algorithms? check bootcamp reviewer notes to confirm my interpretation of numbers are correct first
+| |
 | |
 | | -->
 
