@@ -98,6 +98,7 @@ Software:
     imbalanced-learn version 0.7.0
     Jupyter Notebook version 1.0.0
     NumPy version 1.20.3
+    Pandas
     Python  3.7.11
     SciPy version 1.7.1
     Scikit-learn version 0.24.2
