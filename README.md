@@ -109,4 +109,4 @@ Software:
 
 Email: show.wang94@gmail.com
 
-LinkedIn: [https://www.linkedin.com/in/show-kate-w-802b36168](https://www.linkedin.com/in/show-kate-w-802b36168)
+LinkedIn: [http://bit.ly/3wuUefj](http://bit.ly/3wuUefj)
