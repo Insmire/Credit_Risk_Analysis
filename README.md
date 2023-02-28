@@ -14,7 +14,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 | |
 | | -->
 
-* Naive random over-sampling algorithm with logistic regression model
+* Naive Random Over-Sampling Algorithm with Logistic Regression Model
 
     - The balanced accuracy score is roughly 0.64.
     - The precision, or positive predictive value (PPV), of the model is 0.01 and the sensitivity, or recall, of the model is 0.69 for predicting high-risk applications.
@@ -24,7 +24,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 ![naive_random_oversampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645538-2bba12a9-c08f-4814-b1ce-00386786e81b.png)
 
 
-* Synthetic minority over-sampling technique (SMOTE) algorithm with logistic regression model
+* Synthetic Minority Over-Sampling Technique (SMOTE) Algorithm with Logistic Regression Model
 
     - The balanced accuracy score is roughly 0.66.
     - The precision is 0.01 and the sensitivity is 0.63 for predicting high-risk applications.
@@ -34,7 +34,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 ![smote_oversampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645584-6e9f5139-13b4-41b9-a97b-b1363fd4fd6a.png)
 
 
-* Cluster centroids under-sampling algorithm with logistic regression model
+* Cluster Centroids Under-Sampling Algorithm with Logistic Regression Model
 
     - The balanced accuracy score is roughly 0.54.
     - The precision is 0.01 and the sensitivity is 0.69 for predicting high-risk applications.
@@ -44,7 +44,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 ![cluster_centroids_undersampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645646-25065783-76ad-430a-9490-7d0e2f7b7778.png)
 
 
-* Synthetic minority over-sampling technique edited nearest neighbors (SMOTEENN) algorithm with logistic regression model
+* Synthetic Minority Over-Sampling Technique Edited Nearest Neighbors (SMOTEENN) Algorithm with Logistic Regression Model
 
     - The balanced accuracy score is roughly 0.67.
     - The precision is 0.01 and the sensitivity is 0.76 for predicting high-risk applications.
@@ -54,7 +54,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 ![smoteenn_combination_sampling_eval_metrics](https://user-images.githubusercontent.com/96349090/166645697-72c90ab6-7bbc-4db0-91e9-5712b71b9568.png)
 
 
-* Balanced radom forest classifier model
+* Balanced Random Forest Classifier Model
 
     - The balanced accuracy score is roughly 0.68.
     - The precision is 0.88 and the sensitivity is 0.37 for predicting high-risk applications.
@@ -64,7 +64,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 ![random_forest_eval_metrics](https://user-images.githubusercontent.com/96349090/166645752-c9767b81-8597-48cb-9a8f-dd1d915cc38f.png)
 
 
-* Easy ensemble classifier model
+* Easy Ensemble Classifier Model
 
     - The balanced accuracy score is roughly 0.93.
     - The precision is 0.09 and the sensitivity is 0.92 for predicting high-risk applications.
