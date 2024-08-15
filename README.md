@@ -17,7 +17,7 @@ I begin by converting all qualitative data to numerical data before splitting th
 * Naive Random Over-Sampling Algorithm with Logistic Regression Model
 
     - The balanced accuracy score is roughly 0.64.
-    - The precision, or positive predictive value (PPV), of the model is 0.01 and the sensitivity, or recall, of the model is 0.69 for predicting high-risk applications.
+    - The precision, or positive predictive value (PPV), of the model is 0.01, and the sensitivity, or recall, of the model is 0.69 for predicting high-risk applications.
     - The precision is 1.00 and the sensitivity is 0.59 for predicting low-risk applications.
     - The F1 score or harmonic mean of a high-risk prediction is 0.02; the F1 score of a low-risk prediction is 0.74.
 
